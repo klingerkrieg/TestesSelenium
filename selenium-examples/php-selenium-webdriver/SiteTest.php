@@ -18,9 +18,9 @@ class SiteTest extends TestCase {
 	}
 
 
-    public function atestRegistro(){
+    public function testRegistro(){
 		// Abre o endereço
-		$this->driver->get('http://localhost:8000/register');
+		$this->driver->get('https://www2.ifrn.edu.br/sirab/testes-selenium/public/register');
 
 		$idTest = rand(0,1000);
 
@@ -61,7 +61,7 @@ class SiteTest extends TestCase {
 
 	public function testRegistroFail(){
 		// Abre o endereço
-		$this->driver->get('http://localhost:8000/register');
+		$this->driver->get('https://www2.ifrn.edu.br/sirab/testes-selenium/public/register');
 
 
 		// Nao preenche nenhum campo, apenas submete
