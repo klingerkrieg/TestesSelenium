@@ -9,15 +9,22 @@ use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Facebook\WebDriver\WebDriverBy;
 use PHPUnit\Framework\TestCase;
 
+#https://github.com/php-webdriver/php-webdriver
+#https://phpunit.readthedocs.io/pt_BR/latest/
+
+
+#Toda classe tem que estender TestCase e termina com 'Test"
+#O nome da classe CamelCaseTest tem que ser o mesmo nome do arquivo
 class SiteTest extends TestCase {
 
+	#Configurações iniciais para todos os testes
 	protected function setUp(): void {
 		$serverUrl = 'http://localhost:4444';
 		// Chrome
 		$this->driver = RemoteWebDriver::create($serverUrl, DesiredCapabilities::chrome());
 	}
 
-
+	#Todo teste tem que começar com "test..."
     public function testRegistro(){
 		// Abre o endereço
 		$this->driver->get('https://www2.ifrn.edu.br/sirab/testes-selenium/public/register');
