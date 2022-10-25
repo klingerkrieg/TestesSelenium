@@ -1,8 +1,0 @@
-{
-    "require": {
-        "php-webdriver/webdriver": "^1.13"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "9.5"
-    }
-}
